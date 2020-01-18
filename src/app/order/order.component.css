@@ -1,0 +1,28 @@
+.tableclass{
+    background: #fff;
+    border-radius: 10px;
+    /* height: 100vh; */
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 114px -38px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 114px -38px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 114px -38px rgba(0,0,0,0.75);
+padding: 20px;
+}
+
+.tableheader{
+    color: #171c34;
+    font-weight: bold;
+    margin:10px 0 ;
+
+}
+
+li p{
+    color: #9da5b0;
+}
+.status{
+    color: #00a879;
+    background-color: #dff0d8;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}

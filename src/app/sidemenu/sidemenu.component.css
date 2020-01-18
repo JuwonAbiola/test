@@ -1,0 +1,97 @@
+.sidemenu{
+    background: #fff;
+    border-radius: 0 10px 10px 0;
+    /* height: 100vh; */
+    padding: 10px;
+    -webkit-box-shadow: 16px -11px 18px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px -11px 18px -24px rgba(0,0,0,0.75);
+    box-shadow: 16px -11px 18px -24px rgba(0,0,0,0.75);
+}
+
+.namecard {
+    background: #e5ebf1;
+    border-radius: 12px;
+    padding: .5em;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.namelogo {
+    border-radius: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #3b54ec;
+    color: #fff;
+}
+  
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 10px;
+    margin: 15px 0 0 10px;
+}
+  
+.name b{
+    color: #171c34;
+    font-size: 1.2em;
+    font-weight: 500;
+  
+}
+  
+.name p{
+    color: #9da5b0;
+    font-weight: 200;
+    font-size: .9em;
+}
+
+.bullet{
+    border-radius: 100%;
+    border: 1px solid #171c34;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-top: 5px;
+    margin: 5px 5px 0 0;
+}
+.badge{
+    margin: 0 0 0 5px;
+}
+ul{
+    list-style-type: none;
+}
+.navh{
+    text-transform: uppercase;
+    color: #9da5b0;
+    font-weight: bold;
+}
+li{
+    margin:12px 0;
+}
+li span{
+    font-weight: bold;
+}
+.active .bullet {
+    border: 1px solid #3b54ec;
+}
+.active {
+    color: #3b54ec;
+}
+
+footer {
+    border-radius: 12px;
+    padding: .5em;
+    margin: 10px;
+    color: blue;
+    background-color: #e0e4fffa;
+    width: 100%;
+    text-transform: uppercase;
+    bottom: 0;
+    top: 0;
+    margin-top: 100%;
+}
+.footer{
+    text-align: center;
+}

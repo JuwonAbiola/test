@@ -1,0 +1,50 @@
+<div class="tableclass">
+    <div class="tableheader">
+        Order #{{orders[0].ref}}
+    </div>
+    <ul class="nav nav-fill">
+        <li class="nav-item">
+          <p class="">DATE</p>
+          <b>{{ orders[0].created | date }}</b>
+        </li>
+        <li class="nav-item">
+            <p class="">STATUS</p>
+            <b class="status">{{orders[0].tag}}</b>        
+        </li>
+        <li class="nav-item">
+            <p class="">DISTRUBUTOR</p>
+            <b>{{orders[0].seller.name}}</b>        
+        </li>
+        <li class="nav-item">
+            <p class="">TOTAL</p>
+            <b>{{orders[0].amount}}</b>        
+        </li>
+      </ul>
+      <br/>
+      <div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of orderitems" >
+            <td><img class="img" width="60" height="60" [src]="item.product.upload.path" >{{item.product.name}} </td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.amount}}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><strong>Total - {{ getTotalAmount(orderitems) | number}}</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <button type="button" class="btn btn-primary" data-toggle="button">
+        Edit Order
+      </button>
+</div>

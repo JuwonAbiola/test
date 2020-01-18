@@ -1,0 +1,50 @@
+<div class="buyercard">
+    <div class="buyerheader">
+        Buyer Info
+    </div>
+    <div>
+        <ul>
+          <li>
+            <img class="img" width="70px" height="70px" src="assets/images/demo.png" />
+          </li>
+          <div class="navh">person</div>
+          <li>
+            <div>{{buyer.person}}</div>
+          </li>
+          <li>
+            <div>{{buyer.phone}}</div>
+          </li>
+        
+          <div class="navh">store</div>
+          <li>
+            <div>{{buyer.name}} ({{buyer.store_type.description}})</div>
+          </li>
+          <li>
+         
+          <div class="navh">billing address</div>
+  
+          <li>
+            <div>{{buyer.address}}</div>
+  
+          </li>
+          <div class="navh">wallet balance</div>
+
+          <li>
+            <div>N{{buyer.ledgers[0].balance}}</div>
+  
+          </li>
+          <div class="navh">rating</div>
+
+          <li>
+            <div>{{'⭐️'.repeat(buyer.average_rating*1) }}</div>
+  
+          </li>
+          <div class="navh">created on</div>
+
+          <li>
+            <div>Aug, 8 2019</div>
+  
+          </li>
+        </ul>
+    </div>
+</div>
